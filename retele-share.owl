@@ -9,7 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
     <owl:Ontology rdf:about="http://linguistic.linkeddata.es/def/retele-share">
         <owl:versionInfo xml:lang="es">1.0</owl:versionInfo>
-        <owl:versionInfo xml:lang="es">Ontología para el Catálogo de Recursos Lingüísticos de ReTeLe (http://catalogo.retele.linkeddata.es/). a partir de Metashare.owl (http://purl.org/net/def/metashare)</owl:versionInfo>
+        <owl:versionInfo xml:lang="es">Ontología para el Catálogo de Recursos Lingüísticos de ReTeLe (http://catalogo.retele.linkeddata.es/) a partir de Metashare.owl (http://purl.org/net/def/metashare)</owl:versionInfo>
     </owl:Ontology>
     
 
