@@ -1303,7 +1303,9 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#Actor">
         <owl:equivalentClass rdf:resource="http://xmlns.com/foaf/0.1/Actor"/>
-        <rdfs:label rdf:datatype="http://www.w3.org/2000/01/rdf-schema#Literal">actor</rdfs:label>
+        <rdfs:comment xml:lang="en">Used to bring persons and organizations (in whatever role they may have with regard to the resource, e.g., resource creator, IPR holder, etc.)</rdfs:comment>
+        <rdfs:label xml:lang="en">actor</rdfs:label>
+        <rdfs:label xml:lang="es">actor</rdfs:label>
     </owl:Class>
     
 
@@ -1311,20 +1313,28 @@
     <!-- http://purl.org/net/def/metashare#AnnotationInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#AnnotationInfo">
-        <rdfs:label xml:lang="es">informacion de anotación</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups information on the annotated part(s) of a resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">annotation info</rdfs:label>
+        <rdfs:label xml:lang="es">informacion de las anotaciones</rdfs:label>
     </owl:Class>
     
 
 
     <!-- http://purl.org/net/def/metashare#AudioClassificationInfo -->
 
-    <owl:Class rdf:about="http://purl.org/net/def/metashare#AudioClassificationInfo"/>
+    <owl:Class rdf:about="http://purl.org/net/def/metashare#AudioClassificationInfo">
+        <rdfs:comment xml:lang="en">Groups together information on audio type/genre of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">audio classification info</rdfs:label>
+        <rdfs:label xml:lang="es">información de la clasificación de los audios</rdfs:label>
+    </owl:Class>
     
 
 
     <!-- http://purl.org/net/def/metashare#CharacterEncoding -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#CharacterEncoding">
+        <rdfs:comment xml:lang="en">The name of the character encoding used in the resource or accepted by the tool/service.</rdfs:comment>
+        <rdfs:label xml:lang="en">character encoding</rdfs:label>
         <rdfs:label xml:lang="es">codificación de caracteres</rdfs:label>
     </owl:Class>
     
@@ -1333,7 +1343,9 @@
     <!-- http://purl.org/net/def/metashare#CharacterEncodingInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#CharacterEncodingInfo">
-        <rdfs:label xml:lang="es">información de codificación de caracteres</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information on character encoding of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">character encoding info</rdfs:label>
+        <rdfs:label xml:lang="es">información de la codificación de los caracteres</rdfs:label>
     </owl:Class>
     
 
@@ -1341,6 +1353,7 @@
     <!-- http://purl.org/net/def/metashare#ClassificationInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#ClassificationInfo">
+        <rdfs:label xml:lang="en">classification info</rdfs:label>
         <rdfs:label xml:lang="es">información de clasificación</rdfs:label>
     </owl:Class>
     
@@ -1350,6 +1363,8 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#ComputationalLexicon">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/def/metashare#LexicalConceptualResourceInfo"/>
+        <rdfs:label xml:lang="en">computational lexicon</rdfs:label>
+        <rdfs:label xml:lang="es">léxico computacional</rdfs:label>
     </owl:Class>
     
 
@@ -1380,8 +1395,10 @@
     <!-- http://purl.org/net/def/metashare#CorpusAudioInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#CorpusAudioInfo">
-        <rdfs:label xml:lang="es">información de corpus de audio</rdfs:label>
-        <rdfs:label xml:lang="es">información de corpus oral</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information on the audio module of a corpus.</rdfs:comment>
+        <rdfs:label xml:lang="en">corpus audio info</rdfs:label>
+        <rdfs:label xml:lang="es">información de las partes orales del corpus</rdfs:label>
+        <rdfs:label xml:lang="es">información de los audios del corpus</rdfs:label>
     </owl:Class>
     
 
@@ -1389,7 +1406,9 @@
     <!-- http://purl.org/net/def/metashare#CorpusImageInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#CorpusImageInfo">
-        <rdfs:label xml:lang="es">información de corpus de imágenes</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information on the image component of a resource.</rdfs:comment>
+        <rdfs:label xml:lang="en">corpus image info</rdfs:label>
+        <rdfs:label xml:lang="es">información de las imágenes del corpus</rdfs:label>
     </owl:Class>
     
 
@@ -1397,7 +1416,9 @@
     <!-- http://purl.org/net/def/metashare#CorpusInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#CorpusInfo">
-        <rdfs:label xml:lang="es">información de corpus</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information on corpora of all media types.</rdfs:comment>
+        <rdfs:label xml:lang="en">corpus info</rdfs:label>
+        <rdfs:label xml:lang="es">información del corpus</rdfs:label>
     </owl:Class>
     
 
@@ -1405,7 +1426,9 @@
     <!-- http://purl.org/net/def/metashare#CorpusTextInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#CorpusTextInfo">
-        <rdfs:label xml:lang="es">información de corpus textual</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information on the text component of a resource.</rdfs:comment>
+        <rdfs:comment xml:lang="en">corpus text info</rdfs:comment>
+        <rdfs:label xml:lang="es">información del corpus textual</rdfs:label>
     </owl:Class>
     
 
@@ -1413,7 +1436,9 @@
     <!-- http://purl.org/net/def/metashare#CorpusTextNgramInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#CorpusTextNgramInfo">
-        <rdfs:label xml:lang="es">información de corpus texual con n-gramas</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information required for n-gram resources; information can be provided both as regards features drawn from the source corpus (e.g. language coverage, size, format, domains etc.) and features pertaining to the n-gram output itself (e.g. range of n-grams, type of item included, etc.).</rdfs:comment>
+        <rdfs:label xml:lang="en">corpus text ngram info</rdfs:label>
+        <rdfs:label xml:lang="es">información de los n-gramas del corpus textual</rdfs:label>
     </owl:Class>
     
 
@@ -1421,7 +1446,9 @@
     <!-- http://purl.org/net/def/metashare#CorpusTextNumericalInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#CorpusTextNumericalInfo">
-        <rdfs:label xml:lang="es">información de corpus textual con anotaciones numéricas</rdfs:label>
+        <rdfs:label xml:lang="en">Groups together information on the textNumerical component of a corpus. It is used basically for the textual representation of measurements and observations linked to sensorimotor recordings.</rdfs:label>
+        <rdfs:label xml:lang="en">corpus text numerical info</rdfs:label>
+        <rdfs:label xml:lang="es">información numérica del corpus textual</rdfs:label>
     </owl:Class>
     
 
@@ -1429,7 +1456,10 @@
     <!-- http://purl.org/net/def/metashare#CorpusVideoInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#CorpusVideoInfo">
-        <rdfs:label xml:lang="es">información de corpus de vídeos</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information on the video component of a corpus.</rdfs:comment>
+        <rdfs:comment xml:lang="es">información de los componentes audivisuales del corpus</rdfs:comment>
+        <rdfs:label xml:lang="en">Corpus video info</rdfs:label>
+        <rdfs:label xml:lang="es">información de los vídeos del corpus</rdfs:label>
     </owl:Class>
     
 
@@ -1437,7 +1467,9 @@
     <!-- http://purl.org/net/def/metashare#DocumentInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#DocumentInfo">
-        <rdfs:label xml:lang="es">información del documento</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups information on all the documents reporting on various aspects of the resource (creation, usage etc.), published or unpublished; it is used in various places of the metadata schema depending on its role (e.g. usage report, validation report, annotation manual etc.).</rdfs:comment>
+        <rdfs:comment xml:lang="en">document info</rdfs:comment>
+        <rdfs:label xml:lang="es">información de la documentación</rdfs:label>
     </owl:Class>
     
 
@@ -1447,6 +1479,7 @@
     <owl:Class rdf:about="http://purl.org/net/def/metashare#Documentation">
         <rdfs:comment xml:lang="en">Refers to papers, manuals, reports etc. describing the resource</rdfs:comment>
         <rdfs:label xml:lang="es">documentación</rdfs:label>
+        <rdfs:label xml:lang="en">documentation</rdfs:label>
     </owl:Class>
     
 
@@ -1455,6 +1488,7 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#DomainInfo">
         <rdfs:comment xml:lang="en">Groups together information on domains represented in the resource; can be repeated for parts of the resource with distinct domain</rdfs:comment>
+        <rdfs:label xml:lang="en">domain info</rdfs:label>
         <rdfs:label xml:lang="es">información del dominio</rdfs:label>
     </owl:Class>
     
@@ -1463,7 +1497,8 @@
     <!-- http://purl.org/net/def/metashare#EncodingLevel -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#EncodingLevel">
-        <rdfs:label xml:lang="es">información de codificación</rdfs:label>
+        <rdfs:label xml:lang="en">encoding level</rdfs:label>
+        <rdfs:label xml:lang="es">nivel de codificación</rdfs:label>
     </owl:Class>
     
 
@@ -1472,6 +1507,8 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#FrameNet">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/def/metashare#LexicalConceptualResourceInfo"/>
+        <rdfs:label xml:lang="en">FrameNet</rdfs:label>
+        <rdfs:label xml:lang="es">FrameNet</rdfs:label>
     </owl:Class>
     
 
@@ -1479,7 +1516,9 @@
     <!-- http://purl.org/net/def/metashare#ImageClassificationInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#ImageClassificationInfo">
-        <rdfs:label xml:lang="es">información de clasificación de la imagen</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups information on the classification of the image corpus.</rdfs:comment>
+        <rdfs:comment xml:lang="en">image classification info</rdfs:comment>
+        <rdfs:label xml:lang="es">información de la clasificación de las imágenes</rdfs:label>
     </owl:Class>
     
 
@@ -1487,7 +1526,10 @@
     <!-- http://purl.org/net/def/metashare#InputInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#InputInfo">
+        <rdfs:comment xml:lang="en">Groups together information on the requirements set on the input resource of a tool or service.</rdfs:comment>
+        <rdfs:label xml:lang="es">información de entrada</rdfs:label>
         <rdfs:label xml:lang="es">información del recurso de entrada</rdfs:label>
+        <rdfs:label xml:lang="en">input info</rdfs:label>
     </owl:Class>
     
 
@@ -1503,7 +1545,9 @@
     <!-- http://purl.org/net/def/metashare#LanguageDescriptionImageInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LanguageDescriptionImageInfo">
-        <rdfs:label xml:lang="es">información de imágenes en gramática</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together all information relevant to the image module of a language description (e.g. format, languages, size etc.), if there are any (e.g. for sign language grammars).</rdfs:comment>
+        <rdfs:label xml:lang="es">información de las imágenes en las gramáticas</rdfs:label>
+        <rdfs:label xml:lang="en">language description image info</rdfs:label>
     </owl:Class>
     
 
@@ -1511,7 +1555,9 @@
     <!-- http://purl.org/net/def/metashare#LanguageDescriptionInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LanguageDescriptionInfo">
-        <rdfs:label xml:lang="es">información de gramática</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information on language descriptions (grammars).</rdfs:comment>
+        <rdfs:label xml:lang="es">información de las gramáticas</rdfs:label>
+        <rdfs:label xml:lang="en">language description info</rdfs:label>
     </owl:Class>
     
 
@@ -1540,7 +1586,8 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LanguageInfo">
         <rdfs:comment xml:lang="en">Groups information on the languages represented in the resource</rdfs:comment>
-        <rdfs:label xml:lang="es">información del lenguaje</rdfs:label>
+        <rdfs:label xml:lang="es">información de las lenguas</rdfs:label>
+        <rdfs:label xml:lang="en">language info</rdfs:label>
     </owl:Class>
     
 
@@ -1558,7 +1605,9 @@
     <!-- http://purl.org/net/def/metashare#LanguageVarietyInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LanguageVarietyInfo">
-        <rdfs:label xml:lang="es">información de la variedad del lenguaje</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups information on language varieties occurred in the resource (e.g. dialects).</rdfs:comment>
+        <rdfs:label xml:lang="es">información de las variedades del lenguaje</rdfs:label>
+        <rdfs:label xml:lang="en">language variety info</rdfs:label>
     </owl:Class>
     
 
@@ -1589,6 +1638,8 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LexicalConceptualResourceAudio">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/def/metashare#LexicalConceptualResourceInfo"/>
+        <rdfs:label xml:lang="es">audios del recurso léxico conceptual</rdfs:label>
+        <rdfs:label xml:lang="en">lexical conceptual resource audio</rdfs:label>
     </owl:Class>
     
 
@@ -1605,6 +1656,8 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LexicalConceptualResourceImage">
         <rdfs:subClassOf rdf:resource="http://purl.org/net/def/metashare#LexicalConceptualResourceInfo"/>
+        <rdfs:label xml:lang="es">imágenes del recurso léxico conceptual</rdfs:label>
+        <rdfs:label xml:lang="en">lexical conceptual resource image</rdfs:label>
     </owl:Class>
     
 
@@ -1612,7 +1665,9 @@
     <!-- http://purl.org/net/def/metashare#LexicalConceptualResourceImageInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LexicalConceptualResourceImageInfo">
-        <rdfs:label xml:lang="es">información de imágenes del recurso léxico conceptual</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups information on the image part of the lexical/conceptual resource.</rdfs:comment>
+        <rdfs:label xml:lang="es">información de las imágenes del recurso léxico conceptual</rdfs:label>
+        <rdfs:label xml:lang="en">lexical conceptual resource image info</rdfs:label>
     </owl:Class>
     
 
@@ -1620,8 +1675,9 @@
     <!-- http://purl.org/net/def/metashare#LexicalConceptualResourceInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LexicalConceptualResourceInfo">
-        <rdfs:comment xml:lang="en">Groups together information specific to lexical/conceptual resources</rdfs:comment>
+        <rdfs:comment xml:lang="en">Groups together information specific to lexical/conceptual resources.</rdfs:comment>
         <rdfs:label xml:lang="es">información del recurso léxico conceptual</rdfs:label>
+        <rdfs:label xml:lang="en">lexical conceptual resource info</rdfs:label>
     </owl:Class>
     
 
@@ -1653,7 +1709,10 @@
     <!-- http://purl.org/net/def/metashare#LexicalConceptualResourceVideoInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LexicalConceptualResourceVideoInfo">
+        <rdfs:comment xml:lang="en">Groups information on the video part of the lexical conceptual resource.</rdfs:comment>
         <rdfs:label xml:lang="es">información audiovisual del recurso léxico conceptual</rdfs:label>
+        <rdfs:label xml:lang="es">información de los vídeos del recurso léxico conceptual</rdfs:label>
+        <rdfs:label xml:lang="en">lexical conceptual resource video info</rdfs:label>
     </owl:Class>
     
 
@@ -1670,7 +1729,8 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LicenceInfo">
         <rdfs:comment xml:lang="en">Groups information on licences for the resource; can be repeated to allow for different modes of access and restrictions of use (e.g. free for academic use, on-a-fee basis for commercial use, download of a sample for free use etc.)</rdfs:comment>
-        <rdfs:label xml:lang="es">información de licencias</rdfs:label>
+        <rdfs:label xml:lang="es">información de las licencias</rdfs:label>
+        <rdfs:label xml:lang="en">licence info</rdfs:label>
     </owl:Class>
     
 
@@ -1687,8 +1747,8 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LicenseCategory">
         <rdfs:comment xml:lang="en">A way of classifying licences according to their conditions of use (CLARIN recommendation)</rdfs:comment>
-        <rdfs:label xml:lang="en">License Category</rdfs:label>
         <rdfs:label xml:lang="es">categorización de licencias</rdfs:label>
+        <rdfs:label xml:lang="en">license category</rdfs:label>
     </owl:Class>
     
 
@@ -1718,7 +1778,9 @@
     <!-- http://purl.org/net/def/metashare#MetadataInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#MetadataInfo">
-        <rdfs:label xml:lang="es">información de metadatos</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups information on the metadata record itself.</rdfs:comment>
+        <rdfs:label xml:lang="es">información de los metadatos</rdfs:label>
+        <rdfs:label xml:lang="en">metadata info</rdfs:label>
     </owl:Class>
     
 
@@ -1742,8 +1804,11 @@
     <!-- http://purl.org/net/def/metashare#OutputInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#OutputInfo">
+        <rdfs:comment xml:lang="en">Groups together information on the requirements set on the output of a tool or service.</rdfs:comment>
+        <rdfs:label xml:lang="es">información de salida</rdfs:label>
         <rdfs:label xml:lang="es">información del recurso de salida</rdfs:label>
         <rdfs:label xml:lang="es">información del recurso resultante</rdfs:label>
+        <rdfs:label xml:lang="en">output info</rdfs:label>
     </owl:Class>
     
 
@@ -1791,7 +1856,9 @@
     <!-- http://purl.org/net/def/metashare#TextClassificationInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#TextClassificationInfo">
-        <rdfs:label xml:lang="es">información de la categorización de textos</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information on text type/genre of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="es">información de la clasificación de los textos</rdfs:label>
+        <rdfs:label xml:lang="en">text classification info</rdfs:label>
     </owl:Class>
     
 
@@ -1799,7 +1866,10 @@
     <!-- http://purl.org/net/def/metashare#TextFormatInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#TextFormatInfo">
-        <rdfs:label xml:lang="es">información del formato del texto</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups information on the text format(s) of a resource.</rdfs:comment>
+        <rdfs:label xml:lang="es">información de los formatos del texto</rdfs:label>
+        <rdfs:label xml:lang="es">información de los formatos textuales</rdfs:label>
+        <rdfs:label xml:lang="en">text format info</rdfs:label>
     </owl:Class>
     
 
@@ -1829,7 +1899,9 @@
     <!-- http://purl.org/net/def/metashare#VideoClassificationInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#VideoClassificationInfo">
-        <rdfs:label xml:lang="es">información de la categorización de los vídeos</rdfs:label>
+        <rdfs:comment xml:lang="en">Groups together information on video genre of the resource.</rdfs:comment>
+        <rdfs:label xml:lang="es">información de la clasificación de los vídeos</rdfs:label>
+        <rdfs:label xml:lang="en">video classification info</rdfs:label>
     </owl:Class>
     
 
