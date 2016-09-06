@@ -1,0 +1,23 @@
+digraph ar2dtool_diagram { 
+rankdir=LR;
+size="1000"
+node [shape = rectangle, color="black"]; ":Ontology" ":LanguageDescription" ":MachineReadableDictionary" ":WordList" ":LanguageResource" ":TerminologicalResource" ":LexicalConceptualResourceVideo" ":WordNet" ":LexicalConceptualResourceInfo" ":Lexicon" ":Thesaurus" ":LexicalConceptualResourceImage" ":Corpus" ":LexicalConceptualResource" ":LexicalConceptualResourceAudio" ":LexicalConceptualResourceText" ":ToolService" ":FrameNet" ":ComputationalLexicon" ; /*classes style*/
+	":LexicalConceptualResourceVideo" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":Thesaurus" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":LexicalConceptualResourceText" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":MachineReadableDictionary" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":LanguageDescription" -> ":LanguageResource" [ label = "rdfs:subClassOf" ];
+	":WordNet" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":WordList" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":Corpus" -> ":LanguageResource" [ label = "rdfs:subClassOf" ];
+	":LexicalConceptualResource" -> ":LanguageResource" [ label = "rdfs:subClassOf" ];
+	":Lexicon" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":TerminologicalResource" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":Ontology" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":FrameNet" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":LexicalConceptualResourceAudio" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":ComputationalLexicon" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":LexicalConceptualResourceImage" -> ":LexicalConceptualResourceInfo" [ label = "rdfs:subClassOf" ];
+	":ToolService" -> ":LanguageResource" [ label = "rdfs:subClassOf" ];
+
+}
