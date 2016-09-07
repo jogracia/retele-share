@@ -749,9 +749,9 @@
     
 
 
-    <!-- http://linguistic.linkeddata.es/def/retele-share#islrn -->
+    <!-- https://w3id.org/def/retele-share#islrn -->
 
-    <owl:DatatypeProperty rdf:about="http://linguistic.linkeddata.es/def/retele-share#islrn">
+    <owl:DatatypeProperty rdf:about="https://w3id.org/def/retele-share#islrn">
         <rdfs:domain rdf:resource="http://purl.org/net/def/metashare#LanguageResource"/>
         <rdfs:label xml:lang="en">ISLRN</rdfs:label>
         <rdfs:label xml:lang="en">International Standard Language Resource Number</rdfs:label>
