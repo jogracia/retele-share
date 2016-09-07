@@ -642,13 +642,13 @@ xsd:date
       a       owl:DatatypeProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#Documentation> .
 
-<http://purl.org/net/def/metashare#Size>
-      a       owl:Class ;
-      rdfs:label "tamaño"@es .
-
 <http://purl.org/net/def/metashare#Lexicon>
       a       owl:Class ;
       rdfs:subClassOf <http://purl.org/net/def/metashare#LexicalConceptualResourceInfo> .
+
+<http://purl.org/net/def/metashare#Size>
+      a       owl:Class ;
+      rdfs:label "tamaño"@es .
 
 <http://purl.org/net/def/metashare#languageDescriptionInfo>
       a       owl:ObjectProperty ;
@@ -665,6 +665,13 @@ xsd:date
       a       owl:Class ;
       rdfs:label "licencia"@es .
 
+<http://purl.org/net/def/metashare#conformanceToClassificationScheme>
+      a       owl:ObjectProperty ;
+      rdfs:domain
+              [ a       owl:Class ;
+                owl:unionOf (<http://purl.org/net/def/metashare#AudioClassificationInfo> <http://purl.org/net/def/metashare#DomainInfo> <http://purl.org/net/def/metashare#ImageClassificationInfo> <http://purl.org/net/def/metashare#TextClassificationInfo> <http://purl.org/net/def/metashare#VideoClassificationInfo>)
+              ] .
+
 <http://purl.org/net/def/metashare#userManual>
       a       owl:ObjectProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#LanguageResource> ;
@@ -673,13 +680,6 @@ xsd:date
 <http://purl.org/net/def/metashare#LexicalConceptualResourceText>
       a       owl:Class ;
       rdfs:subClassOf <http://purl.org/net/def/metashare#LexicalConceptualResourceInfo> .
-
-<http://purl.org/net/def/metashare#conformanceToClassificationScheme>
-      a       owl:ObjectProperty ;
-      rdfs:domain
-              [ a       owl:Class ;
-                owl:unionOf (<http://purl.org/net/def/metashare#AudioClassificationInfo> <http://purl.org/net/def/metashare#DomainInfo> <http://purl.org/net/def/metashare#ImageClassificationInfo> <http://purl.org/net/def/metashare#TextClassificationInfo> <http://purl.org/net/def/metashare#VideoClassificationInfo>)
-              ] .
 
 <http://xmlns.com/foaf/0.1/Organization>
       a       owl:Class ;
