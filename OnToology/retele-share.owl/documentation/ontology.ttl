@@ -1,4 +1,4 @@
-@prefix :        <http://linguistic.linkeddata.es/def/retele-share#> .
+@prefix :        <https://w3id.org/def/retele-share#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix terms:   <http://purl.org/dc/terms/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
@@ -73,6 +73,11 @@
       a       owl:ObjectProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> ;
       rdfs:range <http://purl.org/net/def/metashare#Actor> .
+
+<https://w3id.org/def/retele-share>
+      a       owl:Ontology ;
+      rdfs:comment "Ontología para el Catálogo de Recursos Lingüísticos de ReTeLe (http://catalogo.retele.linkeddata.es/)  a partir de Metashare.owl (http://purl.org/net/def/metashare) "@es ;
+      owl:versionInfo "1.0"@es .
 
 <http://purl.org/net/def/metashare#relationInfo>
       a       owl:ObjectProperty ;
@@ -302,6 +307,11 @@
                 owl:unionOf (<http://purl.org/net/def/metashare#TextFormatInfo>)
               ] .
 
+:islrn
+      a       owl:DatatypeProperty ;
+      rdfs:domain <http://purl.org/net/def/metashare#LanguageResource> ;
+      rdfs:label "International Standard Language Resource Number"@en , "ISLRN"@en .
+
 <http://purl.org/net/def/metashare#CorpusTextNumericalInfo>
       a       owl:Class ;
       rdfs:label "información de corpus textual con anotaciones numéricas"@es .
@@ -494,10 +504,6 @@ xsd:date
                 owl:unionOf (<http://purl.org/net/def/metashare#LanguageInfo>)
               ] .
 
-<http://linguistic.linkeddata.es/def/retele-share>
-      a       owl:Ontology ;
-      owl:versionInfo "Ontología para el Catálogo de Recursos Lingüísticos de ReTeLe (http://catalogo.retele.linkeddata.es/)  a partir de Metashare.owl (http://purl.org/net/def/metashare)"@es , "1.0"@es .
-
 <http://purl.org/net/def/metashare#conditionsOfUse>
       a       owl:ObjectProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> .
@@ -592,11 +598,6 @@ xsd:date
       a       owl:ObjectProperty ;
       rdfs:range <http://purl.org/net/def/metashare#Actor> .
 
-:islrn
-      a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/net/def/metashare#LanguageResource> ;
-      rdfs:label "International Standard Language Resource Number"@en , "ISLRN"@en .
-
 <http://purl.org/net/def/metashare#iprHolder>
       a       owl:ObjectProperty ;
       rdfs:comment "Groups information on a person or an organization who holds the full Intellectual Property Rights (Copyright, trademark etc) that subsist in the resource. The IPR holder could be different from the creator that may have assigned the rights to the IPR holder (e.g. an author as a creator assigns her rights to the publisher who is the IPR holder) and the distributor that holds a specific licence (i.e. a permission) to distribute the work within the META-SHARE network."@en , "A person or an organization who holds the full Intellectual Property Rights (Copyright, trademark etc) that subsist in the resource. The IPR holder could be different from the creator that may have assigned the rights to the IPR holder (e.g. an author as a creator assigns her rights to the publisher who is the IPR holder) and the distributor that holds a specific licence (i.e. a permission) to distribute the work via a specific distributor."@en ;
@@ -642,13 +643,13 @@ xsd:date
       a       owl:DatatypeProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#Documentation> .
 
-<http://purl.org/net/def/metashare#Lexicon>
-      a       owl:Class ;
-      rdfs:subClassOf <http://purl.org/net/def/metashare#LexicalConceptualResourceInfo> .
-
 <http://purl.org/net/def/metashare#Size>
       a       owl:Class ;
       rdfs:label "tamaño"@es .
+
+<http://purl.org/net/def/metashare#Lexicon>
+      a       owl:Class ;
+      rdfs:subClassOf <http://purl.org/net/def/metashare#LexicalConceptualResourceInfo> .
 
 <http://purl.org/net/def/metashare#languageDescriptionInfo>
       a       owl:ObjectProperty ;
