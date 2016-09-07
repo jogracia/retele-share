@@ -1,15 +1,15 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://linguistic.linkeddata.es/def/retele-share#"
-     xml:base="http://linguistic.linkeddata.es/def/retele-share"
+<rdf:RDF xmlns="https://w3id.org/def/retele-share#"
+     xml:base="https://w3id.org/def/retele-share"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:terms="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <owl:Ontology rdf:about="http://linguistic.linkeddata.es/def/retele-share">
+    <owl:Ontology rdf:about="https://w3id.org/def/retele-share">
         <owl:versionInfo xml:lang="es">1.0</owl:versionInfo>
-        <owl:versionInfo xml:lang="es">Ontología para el Catálogo de Recursos Lingüísticos de ReTeLe (http://catalogo.retele.linkeddata.es/)  a partir de Metashare.owl (http://purl.org/net/def/metashare)</owl:versionInfo>
+        <rdfs:comment xml:lang="es">Ontología para el Catálogo de Recursos Lingüísticos de ReTeLe (http://catalogo.retele.linkeddata.es/)  a partir de Metashare.owl (http://purl.org/net/def/metashare)</rdfs:comment>
     </owl:Ontology>
     
 
