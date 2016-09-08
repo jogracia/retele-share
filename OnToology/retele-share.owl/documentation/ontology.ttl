@@ -1,6 +1,6 @@
 @prefix :        <https://w3id.org/def/retele-share#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix terms:   <http://purl.org/dc/terms/> .
+@prefix dct:     <http://purl.org/dc/terms/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
@@ -421,13 +421,13 @@
       a       owl:ObjectProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#DomainInfo> .
 
-<http://purl.org/net/def/metashare#LexicalConceptualResourceTextInfo>
-      a       owl:Class ;
-      rdfs:label "información textual del recurso léxico conceptual"@es .
-
 <http://purl.org/net/def/metashare#LexicalConceptualResourceVideo>
       a       owl:Class ;
       rdfs:subClassOf <http://purl.org/net/def/metashare#LexicalConceptualResourceInfo> .
+
+<http://purl.org/net/def/metashare#LexicalConceptualResourceTextInfo>
+      a       owl:Class ;
+      rdfs:label "información textual del recurso léxico conceptual"@es .
 
 <http://purl.org/net/def/metashare#TerminologicalResource>
       a       owl:Class ;
@@ -545,7 +545,7 @@ xsd:date
 <http://purl.org/net/def/metashare#LanguageResource>
       a       owl:Class ;
       rdfs:label "recurso lingüístico"@es ;
-      terms:replaces <http://www.ilsp.gr/META-XMLSchema#resourceInfo> ;
+      dct:replaces <http://www.ilsp.gr/META-XMLSchema#resourceInfo> ;
       owl:equivalentClass <http://www.w3.org/ns/dcat#Dataset> .
 
 <http://purl.org/net/def/metashare#imageGenre>
@@ -791,7 +791,7 @@ rdf:langString
       a       owl:Class ;
       rdfs:comment "The type of the language description"@en .
 
-terms:replaces
+dct:replaces
       a       owl:AnnotationProperty .
 
 <http://purl.org/net/def/metashare#telephoneNumber>
