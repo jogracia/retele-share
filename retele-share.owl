@@ -2,7 +2,7 @@
 <rdf:RDF xmlns="https://w3id.org/def/retele-share#"
      xml:base="https://w3id.org/def/retele-share"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:dct="http://purl.org/dc/terms/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
@@ -1549,7 +1549,7 @@
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LanguageResource">
         <owl:equivalentClass rdf:resource="http://www.w3.org/ns/dcat#Dataset"/>
-        <terms:replaces rdf:resource="http://www.ilsp.gr/META-XMLSchema#resourceInfo"/>
+        <dct:replaces rdf:resource="http://www.ilsp.gr/META-XMLSchema#resourceInfo"/>
         <rdfs:label xml:lang="es">recurso lingüístico</rdfs:label>
     </owl:Class>
     
