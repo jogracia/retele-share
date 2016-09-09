@@ -729,14 +729,14 @@ xsd:date
       a       owl:DatatypeProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#Documentation> .
 
+<http://purl.org/net/def/metashare#Size>
+      a       owl:Class ;
+      rdfs:label "size"@en , "tamaño"@es .
+
 <http://purl.org/net/def/metashare#Lexicon>
       a       owl:Class ;
       rdfs:label "lexicón"@es , "lexicon"@en ;
       rdfs:subClassOf <http://purl.org/net/def/metashare#LexicalConceptualResourceInfo> .
-
-<http://purl.org/net/def/metashare#Size>
-      a       owl:Class ;
-      rdfs:label "size"@en , "tamaño"@es .
 
 <http://purl.org/net/def/metashare#languageDescriptionInfo>
       a       owl:ObjectProperty ;

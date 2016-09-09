@@ -1,6 +1,19 @@
 @prefix prov: <http://www.w3.org/ns/prov#> .
 @prefix dc: <http://purl.org/dc/terms/> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
-<..\index-en.html> a prov:Entity;
+<https://w3id.org/def/retele-share> a prov:Entity;
+	 dc:title "Catálogo ReTeLe de recursos lingüísticos";
+	 prov:wasAttributedTo <http://purl.org/net/jorge-gracia>;
+	 dc:creator <http://purl.org/net/jorge-gracia>;
+	 prov:wasAttributedTo <http://mayor2.dia.fi.upm.es/oeg-upm/index.php/es/teachers/52-emontiel>;
+	 dc:creator <http://mayor2.dia.fi.upm.es/oeg-upm/index.php/es/teachers/52-emontiel>;
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "John P. McCrae".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Jorge Gracia".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Marta Villegas".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Penny Labropoulou".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Philipp Cimiano".];
+	 prov:wasAttributedTo [ a prov:Agent; foaf:name "Victor Rodriguez Doncel".];
 	 prov:wasAttributedTo <https://github.com/dgarijo/Widoco/>,<http://www.essepuntato.it/lode/>;
+	 prov:specializationOf <https://w3id.org/def/retele-share>;
+	 prov:wasGeneratedAt "13/09/2016";
 .
