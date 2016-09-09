@@ -1,9 +1,11 @@
 @prefix :        <https://w3id.org/def/retele-share#> .
 @prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix foaf:    <http://xmlns.com/foaf/0.1/> .
 @prefix dct:     <http://purl.org/dc/terms/> .
 @prefix owl:     <http://www.w3.org/2002/07/owl#> .
 @prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rs:      <https://w3id.org/def/retele-share#> .
 
 <http://purl.org/net/def/metashare#CorpusImageInfo>
       a       owl:Class ;
@@ -76,14 +78,13 @@
       a       owl:ObjectProperty ;
       rdfs:range <http://purl.org/net/def/metashare#Documentation> .
 
-<http://xmlns.com/foaf/0.1/Actor>
+foaf:Actor
       a       owl:Class ;
       rdfs:label "actor"@es .
 
 <http://purl.org/net/def/metashare#distributionRightsHolder>
       a       owl:ObjectProperty ;
       rdfs:comment "Groups information on a person or an organization that holds the distribution rights. The range and scope of distribution rights is defined in the distribution agreement. The distributor in most cases only has a limited licence to distribute the work and collect royalties on behalf of the licensor or the IPR holder and cannot give to any recipient of the work permissions that exceed the scope of the distribution agreement (e.g. to allow uses of the work that are not defined in the distribution agreement)."@en ;
-      rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> ;
       rdfs:label "propietario de los derechos de distribución"@es , "distribution rights holder"@en ;
       rdfs:range <http://purl.org/net/def/metashare#Actor> .
 
@@ -95,6 +96,9 @@
 <http://purl.org/net/def/metashare#relationInfo>
       a       owl:ObjectProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#LanguageResource> .
+
+dct:license
+      a       owl:AnnotationProperty , owl:DatatypeProperty .
 
 <http://purl.org/net/def/metashare#departmentName>
       a       owl:DatatypeProperty ;
@@ -132,12 +136,11 @@
       rdfs:label "información de los textos de la gramática"@es , "language description text info"@en .
 
 <http://purl.org/net/def/metashare#proprietary>
-      a       <http://purl.org/net/def/metashare#LicenceInfo> , owl:NamedIndividual ;
+      a       owl:NamedIndividual ;
       rdfs:label "propio"@es , "proprietary"@en .
 
 <http://purl.org/net/def/metashare#executionLocation>
-      a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> .
+      a       owl:DatatypeProperty .
 
 <http://purl.org/net/def/metashare#faxNumber>
       a       owl:DatatypeProperty ;
@@ -147,7 +150,7 @@
               ] .
 
 <http://purl.org/net/def/metashare#openForReuseWithRestrictions>
-      a       <http://purl.org/net/def/metashare#License> , owl:NamedIndividual ;
+      a       owl:NamedIndividual ;
       rdfs:label "open for reuse with restrictions"@en , "de uso abierto con restricciones"@es .
 
 <http://purl.org/net/def/metashare#encodingLevel>
@@ -252,8 +255,7 @@
       rdfs:label "language variety type"@en , "tipo de variedad de la lengua"@es .
 
 <http://purl.org/net/def/metashare#userNature>
-      a       owl:ObjectProperty ;
-      rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> .
+      a       owl:ObjectProperty .
 
 <http://purl.org/net/def/metashare#url>
       a       owl:DatatypeProperty ;
@@ -292,7 +294,7 @@
 
 <http://purl.org/net/def/metashare#Organization>
       a       owl:Class ;
-      owl:equivalentClass <http://xmlns.com/foaf/0.1/Organization> .
+      owl:equivalentClass foaf:Organization .
 
 <http://purl.org/net/def/metashare#accessTool>
       a       owl:DatatypeProperty ;
@@ -344,7 +346,7 @@
                 owl:unionOf (<http://purl.org/net/def/metashare#TextFormatInfo>)
               ] .
 
-:islrn
+rs:islrn
       a       owl:DatatypeProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#LanguageResource> ;
       rdfs:label "International Standard Language Resource Number"@en , "ISLRN"@en .
@@ -393,7 +395,7 @@
       rdfs:range <http://purl.org/net/def/metashare#Documentation> .
 
 <http://purl.org/net/def/metashare#other>
-      a       <http://purl.org/net/def/metashare#LicenceInfo> , owl:NamedIndividual , <http://purl.org/net/def/metashare#LanguageDescriptionType> ;
+      a       owl:NamedIndividual , <http://purl.org/net/def/metashare#LanguageDescriptionType> ;
       rdfs:label "otro"@es , "other"@en .
 
 <http://purl.org/net/def/metashare#MachineReadableDictionary>
@@ -412,6 +414,9 @@
       rdfs:comment "The date in which the creation process was completed"@en ;
       rdfs:domain <http://purl.org/net/def/metashare#LanguageResource> ;
       rdfs:range xsd:date .
+
+dct:title
+      a       owl:AnnotationProperty .
 
 <http://purl.org/net/def/metashare#ComputationalLexicon>
       a       owl:Class ;
@@ -473,15 +478,15 @@
       a       owl:ObjectProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#DomainInfo> .
 
-<http://purl.org/net/def/metashare#LexicalConceptualResourceTextInfo>
-      a       owl:Class ;
-      rdfs:comment "Groups information on the textual part of the lexical/conceptual resource."@en ;
-      rdfs:label "lexical conceptual resource text info"@en , "información de los textos del recurso léxico conceptual"@es .
-
 <http://purl.org/net/def/metashare#LexicalConceptualResourceVideo>
       a       owl:Class ;
       rdfs:label "lexical conceptual resource video"@en , "vídeos del recurso léxico conceptual"@es ;
       rdfs:subClassOf <http://purl.org/net/def/metashare#LexicalConceptualResourceInfo> .
+
+<http://purl.org/net/def/metashare#LexicalConceptualResourceTextInfo>
+      a       owl:Class ;
+      rdfs:comment "Groups information on the textual part of the lexical/conceptual resource."@en ;
+      rdfs:label "lexical conceptual resource text info"@en , "información de los textos del recurso léxico conceptual"@es .
 
 <http://purl.org/net/def/metashare#TerminologicalResource>
       a       owl:Class ;
@@ -497,11 +502,6 @@
 
 xsd:date
       a       rdfs:Datatype .
-
-<http://purl.org/net/def/metashare#LicenseCategory>
-      a       owl:Class ;
-      rdfs:comment "A way of classifying licences according to their conditions of use (CLARIN recommendation)"@en ;
-      rdfs:label "categorización de las licencias"@es , "license category"@en .
 
 <http://purl.org/net/def/metashare#Person>
       a       owl:Class ;
@@ -546,17 +546,18 @@ xsd:date
       rdfs:label "informacion de las anotaciones"@es , "annotation info"@en .
 
 <http://purl.org/net/def/metashare#fee>
-      a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> .
+      a       owl:DatatypeProperty .
 
 <http://purl.org/net/def/metashare#LanguageDescriptionVideoInfo>
       a       owl:Class ;
       rdfs:comment "Groups together all information relevant to the video parts of a language description (e.g. format, languages, size etc.), if there are any (e.g. for sign language grammars)."@en ;
       rdfs:label "información de los vídeos de la gramática"@es , "language description video info"@en .
 
+dct:language
+      a       owl:AnnotationProperty , owl:DatatypeProperty .
+
 <http://purl.org/net/def/metashare#attributionText>
-      a       owl:DatatypeProperty ;
-      rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> .
+      a       owl:DatatypeProperty .
 
 <http://purl.org/net/def/metashare#languageInfo>
       a       owl:ObjectProperty ;
@@ -573,7 +574,6 @@ xsd:date
 
 <http://purl.org/net/def/metashare#conditionsOfUse>
       a       owl:ObjectProperty ;
-      rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> ;
       rdfs:label "conditions of use"@en , "condiciones de uso"@es .
 
 <http://purl.org/net/def/metashare#country>
@@ -596,8 +596,7 @@ xsd:date
       rdfs:range rdf:langString .
 
 <http://purl.org/net/def/metashare#membershipInfo>
-      a       owl:ObjectProperty ;
-      rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> .
+      a       owl:ObjectProperty .
 
 <http://purl.org/net/def/metashare#MetadataInfo>
       a       owl:Class ;
@@ -610,6 +609,9 @@ xsd:date
       rdfs:domain <http://purl.org/net/def/metashare#LanguageResource> ;
       rdfs:label "foreseen use info"@en , "información del uso previsto del recurso"@es .
 
+dct:description
+      a       owl:AnnotationProperty .
+
 <http://purl.org/net/def/metashare#organizationInfo>
       a       owl:ObjectProperty ;
       rdfs:domain <http://purl.org/net/def/metashare#Actor> ;
@@ -621,6 +623,11 @@ xsd:date
       dct:replaces <http://www.ilsp.gr/META-XMLSchema#resourceInfo> ;
       owl:equivalentClass <http://www.w3.org/ns/dcat#Dataset> .
 
+rs:apertiumrdf
+      a       owl:NamedIndividual , <http://purl.org/net/def/metashare#LexicalConceptualResource> ;
+      dct:description "Apertium RDF is the linked data version of the Apertium family of bilingual dictionaries. It covers 22 dictionaries currently."@en ;
+      dct:title "Apertium RDF" .
+
 <http://purl.org/net/def/metashare#imageGenre>
       a       owl:DatatypeProperty ;
       rdfs:subPropertyOf <http://purl.org/net/def/metashare#genre> .
@@ -629,11 +636,6 @@ xsd:date
       a       owl:Class ;
       rdfs:comment "Groups information on the text format(s) of a resource."@en ;
       rdfs:label "información de los formatos del texto"@es , "text format info"@en .
-
-<http://purl.org/net/def/metashare#LicenceInfo>
-      a       owl:Class ;
-      rdfs:comment "Groups information on licences for the resource; can be repeated to allow for different modes of access and restrictions of use (e.g. free for academic use, on-a-fee basis for commercial use, download of a sample for free use etc.)"@en ;
-      rdfs:label "licence info"@en , "información de la licencia del recurso"@es .
 
 <http://purl.org/net/def/metashare#sizePerLanguage>
       a       owl:ObjectProperty ;
@@ -750,13 +752,8 @@ xsd:date
       rdfs:range <http://purl.org/net/def/metashare#Actor> .
 
 <http://purl.org/net/def/metashare#underNegotiation>
-      a       <http://purl.org/net/def/metashare#LicenceInfo> , owl:NamedIndividual ;
+      a       owl:NamedIndividual ;
       rdfs:label "under Negotiation"@en , "objeto de negociación"@es .
-
-<http://purl.org/net/def/metashare#License>
-      a       owl:Class ;
-      rdfs:comment "The license of use for the resource."@en ;
-      rdfs:label "license"@en , "licencia"@es .
 
 <http://purl.org/net/def/metashare#conformanceToClassificationScheme>
       a       owl:ObjectProperty ;
@@ -777,7 +774,7 @@ xsd:date
       rdfs:label "textos del recurso léxico conceptual"@es , "lexical conceptual resource text"@en ;
       rdfs:subClassOf <http://purl.org/net/def/metashare#LexicalConceptualResourceInfo> .
 
-<http://xmlns.com/foaf/0.1/Organization>
+foaf:Organization
       a       owl:Class ;
       rdfs:label "organización"@es , "organization"@en .
 
@@ -842,9 +839,7 @@ xsd:date
 
 <http://purl.org/net/def/metashare#licenseCategory>
       a       owl:ObjectProperty ;
-      rdfs:domain <http://purl.org/net/def/metashare#License> ;
-      rdfs:label "categoría de licencia"@es , "license category"@en ;
-      rdfs:range <http://purl.org/net/def/metashare#LicenseCategory> .
+      rdfs:label "categoría de licencia"@es , "license category"@en .
 
 <http://purl.org/net/def/metashare#WordList>
       a       owl:Class ;
@@ -940,7 +935,6 @@ dct:replaces
 
 <http://purl.org/net/def/metashare#licensor>
       a       owl:ObjectProperty ;
-      rdfs:domain <http://purl.org/net/def/metashare#LicenceInfo> ;
       rdfs:label "licenciador"@es , "licensor"@en ;
       rdfs:range <http://purl.org/net/def/metashare#Actor> .
 
@@ -982,7 +976,7 @@ dct:replaces
       a       owl:Class ;
       rdfs:comment "Used to bring persons and organizations (in whatever role they may have with regard to the resource, e.g., resource creator, IPR holder, etc.)"@en ;
       rdfs:label "actor"@en , "actor"@es ;
-      owl:equivalentClass <http://xmlns.com/foaf/0.1/Actor> .
+      owl:equivalentClass foaf:Actor .
 
 <http://purl.org/net/def/metashare#CorpusVideoInfo>
       a       owl:Class ;
