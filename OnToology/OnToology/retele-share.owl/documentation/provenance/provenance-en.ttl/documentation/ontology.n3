@@ -1,0 +1,10 @@
+_:AX2dX38e02c95X3aX157220b78fcX3aXX2dX7ffc <http://xmlns.com/foaf/0.1/name> "John P. McCrae" .
+_:AX2dX38e02c95X3aX157220b78fcX3aXX2dX7ffc <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
+<https://w3id.org/def/retele-share> <http://purl.org/dc/terms/creator> <http://mayor2.dia.fi.upm.es/oeg-upm/index.php/es/teachers/52-emontiel> .
+<https://w3id.org/def/retele-share> <http://www.w3.org/ns/prov#wasAttributedTo> <http://mayor2.dia.fi.upm.es/oeg-upm/index.php/es/teachers/52-emontiel> .
+<https://w3id.org/def/retele-share> <http://purl.org/dc/terms/creator> <http://purl.org/net/jorge-gracia> .
+<https://w3id.org/def/retele-share> <http://www.w3.org/ns/prov#wasAttributedTo> <http://purl.org/net/jorge-gracia> .
+<https://w3id.org/def/retele-share> <http://purl.org/dc/terms/title> "Cat\u00E1logo ReTeLe de recursos ling\u00FC\u00EDsticos" .
+<https://w3id.org/def/retele-share> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Entity> .
+_:AX2dX38e02c95X3aX157220b78fcX3aXX2dX7ffb <http://xmlns.com/foaf/0.1/name> "John P. McCrae" .
+_:AX2dX38e02c95X3aX157220b78fcX3aXX2dX7ffb <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/ns/prov#Agent> .
