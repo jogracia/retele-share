@@ -1,0 +1,599 @@
+{
+  "@context" : {
+    "AnnotationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#AnnotationInfo"
+    },
+    "languageVarietyInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#languageVarietyInfo",
+      "@type" : "@id"
+    },
+    "affiliation" : {
+      "@id" : "http://purl.org/net/def/metashare#affiliation",
+      "@type" : "@id"
+    },
+    "sizeUnit" : {
+      "@id" : "http://purl.org/net/def/metashare#sizeUnit",
+      "@type" : "@id"
+    },
+    "documentation" : {
+      "@id" : "http://purl.org/net/def/metashare#documentation",
+      "@type" : "@id"
+    },
+    "organizationShortName" : {
+      "@id" : "http://purl.org/net/def/metashare#organizationShortName"
+    },
+    "CorpusTextNumericalInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#CorpusTextNumericalInfo"
+    },
+    "versionInfo" : {
+      "@id" : "http://www.w3.org/2002/07/owl#versionInfo"
+    },
+    "CharacterEncodingInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#CharacterEncodingInfo"
+    },
+    "departmentName" : {
+      "@id" : "http://purl.org/net/def/metashare#departmentName"
+    },
+    "distributionAccessMedium" : {
+      "@id" : "http://purl.org/net/def/metashare#distributionAccessMedium",
+      "@type" : "@id"
+    },
+    "LicenseCategory" : {
+      "@id" : "http://purl.org/net/def/metashare#LicenseCategory"
+    },
+    "CorpusImageInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#CorpusImageInfo"
+    },
+    "creationModeDetails" : {
+      "@id" : "http://purl.org/net/def/metashare#creationModeDetails"
+    },
+    "Dataset" : {
+      "@id" : "http://www.w3.org/ns/dcat#Dataset"
+    },
+    "LanguageDescriptionTextInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageDescriptionTextInfo"
+    },
+    "LinguisticInformation" : {
+      "@id" : "http://purl.org/net/def/metashare#LinguisticInformation"
+    },
+    "url" : {
+      "@id" : "http://purl.org/net/def/metashare#url",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "Documentation" : {
+      "@id" : "http://purl.org/net/def/metashare#Documentation"
+    },
+    "publications" : {
+      "@id" : "http://purl.org/net/def/metashare#publications",
+      "@type" : "@id"
+    },
+    "personInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#personInfo",
+      "@type" : "@id"
+    },
+    "languageName" : {
+      "@id" : "http://purl.org/net/def/metashare#languageName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "toolServiceInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#toolServiceInfo",
+      "@type" : "@id"
+    },
+    "lexicalConceptualResourceMediaPartInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#lexicalConceptualResourceMediaPartInfo",
+      "@type" : "@id"
+    },
+    "country" : {
+      "@id" : "http://purl.org/net/def/metashare#country"
+    },
+    "Organization" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Organization"
+    },
+    "languageInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#languageInfo",
+      "@type" : "@id"
+    },
+    "creationEndDate" : {
+      "@id" : "http://purl.org/net/def/metashare#creationEndDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "iprHolder" : {
+      "@id" : "http://purl.org/net/def/metashare#iprHolder",
+      "@type" : "@id"
+    },
+    "CorpusInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#CorpusInfo"
+    },
+    "city" : {
+      "@id" : "http://purl.org/net/def/metashare#city"
+    },
+    "SizeUnit" : {
+      "@id" : "http://purl.org/net/def/metashare#SizeUnit"
+    },
+    "Thesaurus" : {
+      "@id" : "http://purl.org/net/def/metashare#Thesaurus"
+    },
+    "LexicalConceptualResourceAudioInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResourceAudioInfo"
+    },
+    "WordList" : {
+      "@id" : "http://purl.org/net/def/metashare#WordList"
+    },
+    "ImageClassificationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#ImageClassificationInfo"
+    },
+    "LanguageDescriptionVideoInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageDescriptionVideoInfo"
+    },
+    "LexicalConceptualResourceInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResourceInfo"
+    },
+    "corpusInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#corpusInfo",
+      "@type" : "@id"
+    },
+    "resourceShortName" : {
+      "@id" : "http://purl.org/net/def/metashare#resourceShortName",
+      "@type" : "http://www.w3.org/1999/02/22-rdf-syntax-ns#langString"
+    },
+    "textGenre" : {
+      "@id" : "http://purl.org/net/def/metashare#textGenre"
+    },
+    "faxNumber" : {
+      "@id" : "http://purl.org/net/def/metashare#faxNumber"
+    },
+    "ClassificationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#ClassificationInfo"
+    },
+    "licensor" : {
+      "@id" : "http://purl.org/net/def/metashare#licensor",
+      "@type" : "@id"
+    },
+    "label" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#label"
+    },
+    "documentUnstructured" : {
+      "@id" : "http://purl.org/net/def/metashare#documentUnstructured"
+    },
+    "Corpus" : {
+      "@id" : "http://purl.org/net/def/metashare#Corpus"
+    },
+    "MachineReadableDictionary" : {
+      "@id" : "http://purl.org/net/def/metashare#MachineReadableDictionary"
+    },
+    "telephoneNumber" : {
+      "@id" : "http://purl.org/net/def/metashare#telephoneNumber"
+    },
+    "lexicalConceptualResourceAudioInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#lexicalConceptualResourceAudioInfo",
+      "@type" : "@id"
+    },
+    "LexicalConceptualResource" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResource"
+    },
+    "actualUseInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#actualUseInfo",
+      "@type" : "@id"
+    },
+    "LanguageResource" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageResource"
+    },
+    "languageDescriptionInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#languageDescriptionInfo",
+      "@type" : "@id"
+    },
+    "Lexicon" : {
+      "@id" : "http://purl.org/net/def/metashare#Lexicon"
+    },
+    "ToolServiceInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#ToolServiceInfo"
+    },
+    "characterEncoding" : {
+      "@id" : "http://purl.org/net/def/metashare#characterEncoding",
+      "@type" : "@id"
+    },
+    "LanguageDescriptionImageInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageDescriptionImageInfo"
+    },
+    "evaluator" : {
+      "@id" : "http://purl.org/net/def/metashare#evaluator",
+      "@type" : "@id"
+    },
+    "LanguageDescriptionType" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageDescriptionType"
+    },
+    "email" : {
+      "@id" : "http://purl.org/net/def/metashare#email",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "OutputInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#OutputInfo"
+    },
+    "CorpusTextNgramInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#CorpusTextNgramInfo"
+    },
+    "linguisticInformation" : {
+      "@id" : "http://purl.org/net/def/metashare#linguisticInformation",
+      "@type" : "@id"
+    },
+    "revision" : {
+      "@id" : "http://purl.org/net/def/metashare#revision"
+    },
+    "LexicalConceptualResourceImage" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResourceImage"
+    },
+    "islrn" : {
+      "@id" : "https://w3id.org/def/retele-share#islrn"
+    },
+    "Person" : {
+      "@id" : "http://purl.org/net/def/metashare#Person"
+    },
+    "languageScript" : {
+      "@id" : "http://purl.org/net/def/metashare#languageScript",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "textFormatInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#textFormatInfo",
+      "@type" : "@id"
+    },
+    "conformanceToClassificationScheme" : {
+      "@id" : "http://purl.org/net/def/metashare#conformanceToClassificationScheme",
+      "@type" : "@id"
+    },
+    "userManual" : {
+      "@id" : "http://purl.org/net/def/metashare#userManual",
+      "@type" : "@id"
+    },
+    "userNature" : {
+      "@id" : "http://purl.org/net/def/metashare#userNature",
+      "@type" : "@id"
+    },
+    "conditionsOfUse" : {
+      "@id" : "http://purl.org/net/def/metashare#conditionsOfUse",
+      "@type" : "@id"
+    },
+    "Actor" : {
+      "@id" : "http://xmlns.com/foaf/0.1/Actor"
+    },
+    "licenseCategory" : {
+      "@id" : "http://purl.org/net/def/metashare#licenseCategory",
+      "@type" : "@id"
+    },
+    "videoGenre" : {
+      "@id" : "http://purl.org/net/def/metashare#videoGenre"
+    },
+    "CorpusVideoInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#CorpusVideoInfo"
+    },
+    "LexicalConceptualResourceVideoInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResourceVideoInfo"
+    },
+    "attributionText" : {
+      "@id" : "http://purl.org/net/def/metashare#attributionText"
+    },
+    "languageVarietyName" : {
+      "@id" : "http://purl.org/net/def/metashare#languageVarietyName",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "TextClassificationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#TextClassificationInfo"
+    },
+    "lexicalConceptualResourceImageInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#lexicalConceptualResourceImageInfo",
+      "@type" : "@id"
+    },
+    "FrameNet" : {
+      "@id" : "http://purl.org/net/def/metashare#FrameNet"
+    },
+    "accessTool" : {
+      "@id" : "http://purl.org/net/def/metashare#accessTool"
+    },
+    "LexicalConceptualResourceImageInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResourceImageInfo"
+    },
+    "LingualityType" : {
+      "@id" : "http://purl.org/net/def/metashare#LingualityType"
+    },
+    "address" : {
+      "@id" : "http://purl.org/net/def/metashare#address"
+    },
+    "extratextualInformation" : {
+      "@id" : "http://purl.org/net/def/metashare#extratextualInformation",
+      "@type" : "@id"
+    },
+    "annotationManual" : {
+      "@id" : "http://purl.org/net/def/metashare#annotationManual",
+      "@type" : "@id"
+    },
+    "characterEncodingInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#characterEncodingInfo",
+      "@type" : "@id"
+    },
+    "AudioClassificationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#AudioClassificationInfo"
+    },
+    "theoreticModel" : {
+      "@id" : "http://purl.org/net/def/metashare#theoreticModel"
+    },
+    "region" : {
+      "@id" : "http://purl.org/net/def/metashare#region"
+    },
+    "externalRef" : {
+      "@id" : "http://purl.org/net/def/metashare#externalRef"
+    },
+    "genre" : {
+      "@id" : "http://purl.org/net/def/metashare#genre",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "creationStartDate" : {
+      "@id" : "http://purl.org/net/def/metashare#creationStartDate",
+      "@type" : "http://www.w3.org/2001/XMLSchema#date"
+    },
+    "lexicalConceptualResourceInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#lexicalConceptualResourceInfo",
+      "@type" : "@id"
+    },
+    "lexicalConceptualResourceType" : {
+      "@id" : "http://purl.org/net/def/metashare#lexicalConceptualResourceType",
+      "@type" : "@id"
+    },
+    "membershipInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#membershipInfo",
+      "@type" : "@id"
+    },
+    "fee" : {
+      "@id" : "http://purl.org/net/def/metashare#fee"
+    },
+    "CorpusAudioInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#CorpusAudioInfo"
+    },
+    "usageReport" : {
+      "@id" : "http://purl.org/net/def/metashare#usageReport",
+      "@type" : "@id"
+    },
+    "metaShareId" : {
+      "@id" : "http://purl.org/net/def/metashare#metaShareId"
+    },
+    "domain" : {
+      "@id" : "http://purl.org/net/def/metashare#domain",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "recorder" : {
+      "@id" : "http://purl.org/net/def/metashare#recorder",
+      "@type" : "@id"
+    },
+    "resourceAssociatedWith" : {
+      "@id" : "http://purl.org/net/def/metashare#resourceAssociatedWith"
+    },
+    "organizationName" : {
+      "@id" : "http://purl.org/net/def/metashare#organizationName"
+    },
+    "CharacterEncoding" : {
+      "@id" : "http://purl.org/net/def/metashare#CharacterEncoding"
+    },
+    "Size" : {
+      "@id" : "http://purl.org/net/def/metashare#Size"
+    },
+    "evaluationReport" : {
+      "@id" : "http://purl.org/net/def/metashare#evaluationReport",
+      "@type" : "@id"
+    },
+    "DocumentInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#DocumentInfo"
+    },
+    "organizationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#organizationInfo",
+      "@type" : "@id"
+    },
+    "foreseenUseInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#foreseenUseInfo",
+      "@type" : "@id"
+    },
+    "LexicalConceptualResourceAudio" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResourceAudio"
+    },
+    "Project" : {
+      "@id" : "http://purl.org/net/def/metashare#Project"
+    },
+    "domainInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#domainInfo",
+      "@type" : "@id"
+    },
+    "fundingProject" : {
+      "@id" : "http://purl.org/net/def/metashare#fundingProject",
+      "@type" : "@id"
+    },
+    "TerminologicalResource" : {
+      "@id" : "http://purl.org/net/def/metashare#TerminologicalResource"
+    },
+    "encodingLevel" : {
+      "@id" : "http://purl.org/net/def/metashare#encodingLevel",
+      "@type" : "@id"
+    },
+    "ContactPerson" : {
+      "@id" : "http://purl.org/net/def/metashare#ContactPerson"
+    },
+    "LanguageVarietyInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageVarietyInfo"
+    },
+    "sizePerLanguage" : {
+      "@id" : "http://purl.org/net/def/metashare#sizePerLanguage",
+      "@type" : "@id"
+    },
+    "issn" : {
+      "@id" : "http://purl.org/net/def/metashare#issn"
+    },
+    "MetadataInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#MetadataInfo"
+    },
+    "imageGenre" : {
+      "@id" : "http://purl.org/net/def/metashare#imageGenre"
+    },
+    "audioGenre" : {
+      "@id" : "http://purl.org/net/def/metashare#audioGenre"
+    },
+    "ToolService" : {
+      "@id" : "http://purl.org/net/def/metashare#ToolService"
+    },
+    "WordNet" : {
+      "@id" : "http://purl.org/net/def/metashare#WordNet"
+    },
+    "sizePerDomain" : {
+      "@id" : "http://purl.org/net/def/metashare#sizePerDomain",
+      "@type" : "@id"
+    },
+    "LanguageInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageInfo"
+    },
+    "zipCode" : {
+      "@id" : "http://purl.org/net/def/metashare#zipCode"
+    },
+    "languageDescriptionType" : {
+      "@id" : "http://purl.org/net/def/metashare#languageDescriptionType",
+      "@type" : "@id"
+    },
+    "VideoClassificationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#VideoClassificationInfo"
+    },
+    "validator" : {
+      "@id" : "http://purl.org/net/def/metashare#validator",
+      "@type" : "@id"
+    },
+    "CorpusTextInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#CorpusTextInfo"
+    },
+    "LanguageDescription" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageDescription"
+    },
+    "EncodingLevel" : {
+      "@id" : "http://purl.org/net/def/metashare#EncodingLevel"
+    },
+    "lexicalConceptualResourceTextInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#lexicalConceptualResourceTextInfo",
+      "@type" : "@id"
+    },
+    "LexicalConceptualResourceVideo" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResourceVideo"
+    },
+    "distributionRightsHolder" : {
+      "@id" : "http://purl.org/net/def/metashare#distributionRightsHolder",
+      "@type" : "@id"
+    },
+    "replaces" : {
+      "@id" : "http://purl.org/dc/terms/replaces"
+    },
+    "speechGenre" : {
+      "@id" : "http://purl.org/net/def/metashare#speechGenre"
+    },
+    "lexicalConceptualResourceVideoInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#lexicalConceptualResourceVideoInfo",
+      "@type" : "@id"
+    },
+    "size" : {
+      "@id" : "http://purl.org/net/def/metashare#size",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "extraTextualInformationUnit" : {
+      "@id" : "http://purl.org/net/def/metashare#extraTextualInformationUnit",
+      "@type" : "@id"
+    },
+    "mimeType" : {
+      "@id" : "http://purl.org/net/def/metashare#mimeType",
+      "@type" : "http://www.w3.org/2001/XMLSchema#string"
+    },
+    "comment" : {
+      "@id" : "http://www.w3.org/2000/01/rdf-schema#comment"
+    },
+    "License" : {
+      "@id" : "http://purl.org/net/def/metashare#License"
+    },
+    "originalSource" : {
+      "@id" : "http://purl.org/net/def/metashare#originalSource"
+    },
+    "lingualityType" : {
+      "@id" : "http://purl.org/net/def/metashare#lingualityType",
+      "@type" : "@id"
+    },
+    "LexicalConceptualResourceTextInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResourceTextInfo"
+    },
+    "DomainInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#DomainInfo"
+    },
+    "documentInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#documentInfo",
+      "@type" : "@id"
+    },
+    "languageVarietyType" : {
+      "@id" : "http://purl.org/net/def/metashare#languageVarietyType",
+      "@type" : "@id"
+    },
+    "metadataSource" : {
+      "@id" : "http://purl.org/net/def/metashare#metadataSource"
+    },
+    "toolDocumentationType" : {
+      "@id" : "http://purl.org/net/def/metashare#toolDocumentationType",
+      "@type" : "@id"
+    },
+    "annotator" : {
+      "@id" : "http://purl.org/net/def/metashare#annotator",
+      "@type" : "@id"
+    },
+    "updateFrequency" : {
+      "@id" : "http://purl.org/net/def/metashare#updateFrequency"
+    },
+    "creationMode" : {
+      "@id" : "http://purl.org/net/def/metashare#creationMode",
+      "@type" : "@id"
+    },
+    "InputInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#InputInfo"
+    },
+    "LexicalConceptualResourceText" : {
+      "@id" : "http://purl.org/net/def/metashare#LexicalConceptualResourceText"
+    },
+    "LicenceInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LicenceInfo"
+    },
+    "creationTool" : {
+      "@id" : "http://purl.org/net/def/metashare#creationTool"
+    },
+    "samplesLocation" : {
+      "@id" : "http://purl.org/net/def/metashare#samplesLocation"
+    },
+    "textClassificationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#textClassificationInfo",
+      "@type" : "@id"
+    },
+    "validationReport" : {
+      "@id" : "http://purl.org/net/def/metashare#validationReport",
+      "@type" : "@id"
+    },
+    "executionLocation" : {
+      "@id" : "http://purl.org/net/def/metashare#executionLocation"
+    },
+    "LanguageDescriptionInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageDescriptionInfo"
+    },
+    "TextFormatInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#TextFormatInfo"
+    },
+    "ComputationalLexicon" : {
+      "@id" : "http://purl.org/net/def/metashare#ComputationalLexicon"
+    },
+    "LanguageVarietyType" : {
+      "@id" : "http://purl.org/net/def/metashare#LanguageVarietyType"
+    },
+    "Ontology" : {
+      "@id" : "http://purl.org/net/def/metashare#Ontology"
+    },
+    "validationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#validationInfo",
+      "@type" : "@id"
+    },
+    "relationInfo" : {
+      "@id" : "http://purl.org/net/def/metashare#relationInfo",
+      "@type" : "@id"
+    }
+  }
+}
