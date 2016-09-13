@@ -178,6 +178,16 @@ This section provides details for each class and property defined by retele-shar
          <a href="#http://purl.org/net/def/metashare#Lexicon" title="http://purl.org/net/def/metashare#Lexicon">lexicon</a>
       </li>
       <li>
+         <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/net/def/metashare#License" title="http://purl.org/net/def/metashare#License">license</a>
+      </li>
+      <li>
+         <a href="#http://purl.org/net/def/metashare#LicenseCategory"
+            title="http://purl.org/net/def/metashare#LicenseCategory">license category</a>
+      </li>
+      <li>
          <a href="#http://purl.org/net/def/metashare#LingualityType"
             title="http://purl.org/net/def/metashare#LingualityType">linguality type</a>
       </li>
@@ -871,11 +881,6 @@ This section provides details for each class and property defined by retele-shar
                title="http://purl.org/net/def/metashare#LanguageResource">language resource</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
-         <dt>has members</dt>
-         <dd>
-            <a href="#apertiumrdf" title="https://w3id.org/def/retele-share#apertiumrdf">apertiumrdf</a>
-            <sup class="type-ni" title="named individual">ni</sup>
-         </dd>
       </dl>
    </div>
    <div class="entity" id="http://purl.org/net/def/metashare#LexicalConceptualResourceAudio">
@@ -1065,6 +1070,87 @@ This section provides details for each class and property defined by retele-shar
             <a href="#http://purl.org/net/def/metashare#LexicalConceptualResourceInfo"
                title="http://purl.org/net/def/metashare#LexicalConceptualResourceInfo">lexical conceptual resource info</a>
             <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/net/def/metashare#LicenceInfo">
+      <h3>licence info<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/def/metashare#LicenceInfo</p>
+      <div class="comment">
+         <span class="markdown">Groups information on licences for the resource; can be repeated to allow for different modes of access and restrictions of use (e.g. free for academic use, on-a-fee basis for commercial use, download of a sample for free use etc.)</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://purl.org/net/def/metashare#attributionText"
+               title="http://purl.org/net/def/metashare#attributionText">attribution text</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/net/def/metashare#conditionsOfUse"
+               title="http://purl.org/net/def/metashare#conditionsOfUse">conditions of use</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/net/def/metashare#distributionRightsHolder"
+               title="http://purl.org/net/def/metashare#distributionRightsHolder">distribution rights holder</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/net/def/metashare#executionLocation"
+               title="http://purl.org/net/def/metashare#executionLocation">execution location</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/net/def/metashare#fee" title="http://purl.org/net/def/metashare#fee">fee</a>
+            <sup class="type-dp" title="data property">dp</sup>, <a href="#http://purl.org/net/def/metashare#licensor" title="http://purl.org/net/def/metashare#licensor">licensor</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/net/def/metashare#membershipInfo" title="http://purl.org/net/def/metashare#membershipInfo">membership info</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#http://purl.org/net/def/metashare#userNature" title="http://purl.org/net/def/metashare#userNature">user nature</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#http://purl.org/net/def/metashare#other" title="http://purl.org/net/def/metashare#other">other</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/net/def/metashare#proprietary" title="http://purl.org/net/def/metashare#proprietary">proprietary</a>
+            <sup class="type-ni" title="named individual">ni</sup>, <a href="#http://purl.org/net/def/metashare#underNegotiation"
+               title="http://purl.org/net/def/metashare#underNegotiation">under Negotiation</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/net/def/metashare#License">
+      <h3>license<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/def/metashare#License</p>
+      <div class="comment">
+         <span class="markdown">The license of use for the resource.</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#http://purl.org/net/def/metashare#licenseCategory"
+               title="http://purl.org/net/def/metashare#licenseCategory">license category</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>has members</dt>
+         <dd>
+            <a href="#http://purl.org/net/def/metashare#openForReuseWithRestrictions"
+               title="http://purl.org/net/def/metashare#openForReuseWithRestrictions">open for reuse with restrictions</a>
+            <sup class="type-ni" title="named individual">ni</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://purl.org/net/def/metashare#LicenseCategory">
+      <h3>license category<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/def/metashare#LicenseCategory</p>
+      <div class="comment">
+         <span class="markdown">A way of classifying licences according to their conditions of use (CLARIN recommendation)</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#http://purl.org/net/def/metashare#licenseCategory"
+               title="http://purl.org/net/def/metashare#licenseCategory">license category</a>
+            <sup class="type-op" title="object property">op</sup>
          </dd>
       </dl>
    </div>
@@ -1507,6 +1593,11 @@ This section provides details for each class and property defined by retele-shar
             title="http://purl.org/net/def/metashare#linguisticInformation">linguistic information</a>
       </li>
       <li>
+         <a href="#http://purl.org/net/def/metashare#membershipInfo" title="http://purl.org/net/def/metashare#membershipInfo">
+            <span>membership info</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://purl.org/net/def/metashare#organizationInfo"
             title="http://purl.org/net/def/metashare#organizationInfo">
             <span>organization info</span>
@@ -1580,6 +1671,11 @@ This section provides details for each class and property defined by retele-shar
       <li>
          <a href="#http://purl.org/net/def/metashare#userManual" title="http://purl.org/net/def/metashare#userManual">
             <span>user manual</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/net/def/metashare#userNature" title="http://purl.org/net/def/metashare#userNature">
+            <span>user nature</span>
          </a>
       </li>
       <li>
@@ -1765,6 +1861,15 @@ This section provides details for each class and property defined by retele-shar
       </h3>
       <p>
          <strong>IRI:</strong> http://purl.org/net/def/metashare#conditionsOfUse</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="http://purl.org/net/def/metashare#conformanceToClassificationScheme">
       <h3>conformance to classification scheme<sup class="type-op" title="object property">op</sup>
@@ -1896,6 +2001,11 @@ This section provides details for each class and property defined by retele-shar
       </div>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#http://purl.org/net/def/metashare#Actor" title="http://purl.org/net/def/metashare#Actor">actor</a>
@@ -2514,6 +2624,21 @@ This section provides details for each class and property defined by retele-shar
       </h3>
       <p>
          <strong>IRI:</strong> http://purl.org/net/def/metashare#licenseCategory</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#License" title="http://purl.org/net/def/metashare#License">license</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#LicenseCategory"
+                  title="http://purl.org/net/def/metashare#LicenseCategory">license category</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
    </div>
    <div class="entity" id="http://purl.org/net/def/metashare#licensor">
       <h3>licensor<sup class="type-op" title="object property">op</sup>
@@ -2524,6 +2649,11 @@ This section provides details for each class and property defined by retele-shar
          <strong>IRI:</strong> http://purl.org/net/def/metashare#licensor</p>
       <div class="description">
          <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
             <dt>has range</dt>
             <dd>
                <a href="#http://purl.org/net/def/metashare#Actor" title="http://purl.org/net/def/metashare#Actor">actor</a>
@@ -2625,6 +2755,23 @@ This section provides details for each class and property defined by retele-shar
             <dd>
                <a href="#http://purl.org/net/def/metashare#LinguisticInformation"
                   title="http://purl.org/net/def/metashare#LinguisticInformation">información lingüística</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/net/def/metashare#membershipInfo">
+      <h3>membership info<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/def/metashare#membershipInfo</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -2926,6 +3073,23 @@ This section provides details for each class and property defined by retele-shar
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://purl.org/net/def/metashare#userNature">
+      <h3>user nature<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/def/metashare#userNature</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://purl.org/net/def/metashare#validationInfo">
       <h3>validation info<sup class="type-op" title="object property">op</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
@@ -2992,6 +3156,12 @@ This section provides details for each class and property defined by retele-shar
          </a>
       </li>
       <li>
+         <a href="#http://purl.org/net/def/metashare#attributionText"
+            title="http://purl.org/net/def/metashare#attributionText">
+            <span>attribution text</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://purl.org/net/def/metashare#audioGenre" title="http://purl.org/net/def/metashare#audioGenre">
             <span>audio genre</span>
          </a>
@@ -3052,6 +3222,12 @@ This section provides details for each class and property defined by retele-shar
          </a>
       </li>
       <li>
+         <a href="#http://purl.org/net/def/metashare#executionLocation"
+            title="http://purl.org/net/def/metashare#executionLocation">
+            <span>execution location</span>
+         </a>
+      </li>
+      <li>
          <a href="#http://purl.org/net/def/metashare#externalRef" title="http://purl.org/net/def/metashare#externalRef">
             <span>external ref</span>
          </a>
@@ -3059,6 +3235,11 @@ This section provides details for each class and property defined by retele-shar
       <li>
          <a href="#http://purl.org/net/def/metashare#faxNumber" title="http://purl.org/net/def/metashare#faxNumber">
             <span>fax number</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://purl.org/net/def/metashare#fee" title="http://purl.org/net/def/metashare#fee">
+            <span>fee</span>
          </a>
       </li>
       <li>
@@ -3240,6 +3421,23 @@ This section provides details for each class and property defined by retele-shar
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://purl.org/net/def/metashare#Person" title="http://purl.org/net/def/metashare#Person">person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/net/def/metashare#attributionText">
+      <h3>attribution text<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/def/metashare#attributionText</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -3553,6 +3751,23 @@ This section provides details for each class and property defined by retele-shar
          </dl>
       </div>
    </div>
+   <div class="entity" id="http://purl.org/net/def/metashare#executionLocation">
+      <h3>execution location<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/def/metashare#executionLocation</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
    <div class="entity" id="http://purl.org/net/def/metashare#externalRef">
       <h3>external ref<sup class="type-dp" title="data property">dp</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
@@ -3586,6 +3801,23 @@ This section provides details for each class and property defined by retele-shar
                <sup class="type-c" title="class">c</sup> 
                <span class="logic">or</span> 
                <a href="#http://purl.org/net/def/metashare#Person" title="http://purl.org/net/def/metashare#Person">person</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="http://purl.org/net/def/metashare#fee">
+      <h3>fee<sup class="type-dp" title="data property">dp</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://purl.org/net/def/metashare#fee</p>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
                <sup class="type-c" title="class">c</sup>
             </dd>
          </dl>
@@ -4224,11 +4456,6 @@ This section provides details for each class and property defined by retele-shar
    <h2>Named Individuals</h2>
    <ul class="hlist">
       <li>
-         <a href="#apertiumrdf" title="https://w3id.org/def/retele-share#apertiumrdf">
-            <span>apertiumrdf</span>
-         </a>
-      </li>
-      <li>
          <a href="#http://purl.org/net/def/metashare#grammar" title="http://purl.org/net/def/metashare#grammar">grammar</a>
       </li>
       <li>
@@ -4246,22 +4473,6 @@ This section provides details for each class and property defined by retele-shar
             title="http://purl.org/net/def/metashare#underNegotiation">under Negotiation</a>
       </li>
    </ul>
-   <div class="entity" id="apertiumrdf">
-      <h3>apertiumrdf<sup class="type-ni" title="named individual">ni</sup>
-         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
-         </span>
-      </h3>
-      <p>
-         <strong>IRI:</strong> https://w3id.org/def/retele-share#apertiumrdf</p>
-      <dl class="description">
-         <dt>belongs to</dt>
-         <dd>
-            <a href="#http://purl.org/net/def/metashare#LexicalConceptualResource"
-               title="http://purl.org/net/def/metashare#LexicalConceptualResource">lexical conceptual resource</a>
-            <sup class="type-c" title="class">c</sup>
-         </dd>
-      </dl>
-   </div>
    <div class="entity" id="http://purl.org/net/def/metashare#grammar">
       <h3>grammar<sup class="type-ni" title="named individual">ni</sup>
          <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a>
@@ -4285,6 +4496,13 @@ This section provides details for each class and property defined by retele-shar
       </h3>
       <p>
          <strong>IRI:</strong> http://purl.org/net/def/metashare#openForReuseWithRestrictions</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://purl.org/net/def/metashare#License" title="http://purl.org/net/def/metashare#License">license</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://purl.org/net/def/metashare#other">
       <h3>other<sup class="type-ni" title="named individual">ni</sup>
@@ -4300,6 +4518,10 @@ This section provides details for each class and property defined by retele-shar
                title="http://purl.org/net/def/metashare#LanguageDescriptionType">language description type</a>
             <sup class="type-c" title="class">c</sup>
          </dd>
+         <dd>
+            <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
       </dl>
    </div>
    <div class="entity" id="http://purl.org/net/def/metashare#proprietary">
@@ -4309,6 +4531,13 @@ This section provides details for each class and property defined by retele-shar
       </h3>
       <p>
          <strong>IRI:</strong> http://purl.org/net/def/metashare#proprietary</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
    <div class="entity" id="http://purl.org/net/def/metashare#underNegotiation">
       <h3>under Negotiation<sup class="type-ni" title="named individual">ni</sup>
@@ -4317,5 +4546,12 @@ This section provides details for each class and property defined by retele-shar
       </h3>
       <p>
          <strong>IRI:</strong> http://purl.org/net/def/metashare#underNegotiation</p>
+      <dl class="description">
+         <dt>belongs to</dt>
+         <dd>
+            <a href="#http://purl.org/net/def/metashare#LicenceInfo" title="http://purl.org/net/def/metashare#LicenceInfo">licence info</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
    </div>
 </div>
