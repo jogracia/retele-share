@@ -660,17 +660,14 @@
 
     <!-- http://purl.org/net/def/metashare#membershipInfo -->
 
-<<<<<<< HEAD
+
     <owl:ObjectProperty rdf:about="http://purl.org/net/def/metashare#membershipInfo">
         <rdfs:domain rdf:resource="http://purl.org/net/def/metashare#LicenceInfo"/>
         <rdfs:comment xml:lang="en">The conditions imposed by the user being member of some association/institution (e.g., ELRA, LDC) distributing the resource. This indicates the availability conditions (and prices) for users who are members or not.</rdfs:comment>
         <rdfs:label xml:lang="es">información de afiliación</rdfs:label>
         <rdfs:label xml:lang="en">membership info</rdfs:label>
     </owl:ObjectProperty>
-=======
-    <owl:ObjectProperty rdf:about="http://purl.org/net/def/metashare#membershipInfo"/>
->>>>>>> origin/master
-    
+
 
 
     <!-- http://purl.org/net/def/metashare#organizationInfo -->
@@ -867,17 +864,14 @@
 
     <!-- http://purl.org/net/def/metashare#userNature -->
 
-<<<<<<< HEAD
+
     <owl:ObjectProperty rdf:about="http://purl.org/net/def/metashare#userNature">
         <rdfs:domain rdf:resource="http://purl.org/net/def/metashare#LicenceInfo"/>
         <rdfs:comment xml:lang="en">The conditions imposed by the nature of the user (for instance, a research use may have different implications depending on this).</rdfs:comment>
         <rdfs:label xml:lang="es">naturaleza del usuario</rdfs:label>
         <rdfs:label xml:lang="en">user nature</rdfs:label>
     </owl:ObjectProperty>
-=======
-    <owl:ObjectProperty rdf:about="http://purl.org/net/def/metashare#userNature"/>
->>>>>>> origin/master
-    
+
 
 
     <!-- http://purl.org/net/def/metashare#validationInfo -->
@@ -966,16 +960,14 @@
 
     <!-- http://purl.org/net/def/metashare#attributionText -->
 
-<<<<<<< HEAD
+
     <owl:DatatypeProperty rdf:about="http://purl.org/net/def/metashare#attributionText">
         <rdfs:domain rdf:resource="http://purl.org/net/def/metashare#LicenceInfo"/>
         <rdfs:comment xml:lang="en">The text that must be quoted for attribution purposes when using a resource.</rdfs:comment>
         <rdfs:label xml:lang="en">attribution text</rdfs:label>
         <rdfs:label xml:lang="es">texto de la atribución</rdfs:label>
     </owl:DatatypeProperty>
-=======
-    <owl:DatatypeProperty rdf:about="http://purl.org/net/def/metashare#attributionText"/>
->>>>>>> origin/master
+
     
 
 
@@ -1159,16 +1151,13 @@
 
     <!-- http://purl.org/net/def/metashare#executionLocation -->
 
-<<<<<<< HEAD
     <owl:DatatypeProperty rdf:about="http://purl.org/net/def/metashare#executionLocation">
         <rdfs:domain rdf:resource="http://purl.org/net/def/metashare#LicenceInfo"/>
         <rdfs:comment xml:lang="en">Any url where the service providing access to a resource is being executed.</rdfs:comment>
         <rdfs:label xml:lang="en">execution location</rdfs:label>
         <rdfs:label xml:lang="es">localización de la ejecución</rdfs:label>
     </owl:DatatypeProperty>
-=======
-    <owl:DatatypeProperty rdf:about="http://purl.org/net/def/metashare#executionLocation"/>
->>>>>>> origin/master
+
     
 
 
@@ -1203,15 +1192,13 @@ to a wordnet or ontology).</rdfs:comment>
 
     <!-- http://purl.org/net/def/metashare#fee -->
 
-<<<<<<< HEAD
+
     <owl:DatatypeProperty rdf:about="http://purl.org/net/def/metashare#fee">
         <rdfs:domain rdf:resource="http://purl.org/net/def/metashare#LicenceInfo"/>
         <rdfs:label xml:lang="en">fee</rdfs:label>
         <rdfs:label xml:lang="es">tasas</rdfs:label>
     </owl:DatatypeProperty>
-=======
-    <owl:DatatypeProperty rdf:about="http://purl.org/net/def/metashare#fee"/>
->>>>>>> origin/master
+
     
 
 
@@ -2075,7 +2062,7 @@ to a wordnet or ontology).</rdfs:comment>
     
 
 
-<<<<<<< HEAD
+
     <!-- http://purl.org/net/def/metashare#LicenceInfo -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LicenceInfo">
@@ -2106,8 +2093,6 @@ to a wordnet or ontology).</rdfs:comment>
     
 
 
-=======
->>>>>>> origin/master
     <!-- http://purl.org/net/def/metashare#LingualityType -->
 
     <owl:Class rdf:about="http://purl.org/net/def/metashare#LingualityType">
